@@ -1,0 +1,27 @@
+{
+    "projects": [
+        {
+        "id": 1,
+        "title": "Bathhouse Thala",
+        "description": "This is the first project.",
+        "time": "second semester",
+        "mainImage": "/images/project1.jpg"
+        },
+        {
+        "id": 2,
+        "title": "Pullman Hotel",
+                "time": "second semester",
+
+        "description": "This is the second project.",
+        "image": "/images/project2.jpg"
+        },
+        {
+        "id": 3,
+        "title": "Casa Beires - Glass Wall",
+                "time": "second semester",
+
+        "description": "This is the third project.",
+        "image": "/images/project3.jpg"
+        }
+    ]
+}
