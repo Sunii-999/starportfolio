@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function Header() {
   return (
-<div className="relative w-full h-[calc(100vh-4rem)]">
+<div className="relative w-full h-screen">
     <Image
-        src="/header.png" // put your image in /public
+        src="/images/header.png"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover"
         width={1280}

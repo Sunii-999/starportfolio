@@ -5,16 +5,16 @@ import { useState } from "react";
 export default function Navigation() {
   const [open, setOpen] = useState(false);
 
-  const menuItems = ["Properties", "About me", "Contact"];
+  const menuItems = ["About me", "Projects",  "Contact"];
 
   return (
-    <nav className="w-full bg-black text-white font-sans">
+    <nav className="w-full bg-black text-white font-sans sticky top-0 z-50">
       <div className="flex items-center justify-between h-16 px-6">
         <p className="font-bold tracking-tight text-xl">Linda Zaeske.</p>
 
         {/* Desktop menu */}
         <ul className="hidden md:flex gap-8 uppercase text-xs tracking-widest">
-          {['About', 'Projects', 'Contact'].map((item) => (
+          {['About me', 'Projects', 'Contact'].map((item) => (
             <li key={item}><a href={`#${item.toLowerCase()}`} className="hover:opacity-60 transition-opacity">{item}</a></li>
           ))}
         </ul>
