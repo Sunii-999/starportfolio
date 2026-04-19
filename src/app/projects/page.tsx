@@ -13,10 +13,10 @@ export default function ProjectsPage() {
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const cards = gsap.utils.toArray(".project-card");
+  
+    const cards = gsap.utils.toArray<HTMLElement>(".project-card");
     
-    cards.forEach((card: any) => {
+    cards.forEach((card) => {
       gsap.fromTo(card, 
         { opacity: 0, y: 50 },
         {

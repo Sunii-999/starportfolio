@@ -11,8 +11,8 @@ import Skills from "@/components/Skills/Skills";
 import ContactForm from "@/components/Form/ContactForm";
 
 export default function Home() {
-  const horizontalRef = useRef(null);
-  const containerRef = useRef(null);
+  const horizontalRef = useRef<HTMLDivElement>(null);
+const containerRef = useRef<HTMLDivElement>(null);
 
   const featuredProjects = projects.filter((project) => project.featured);
 
