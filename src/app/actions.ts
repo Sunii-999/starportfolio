@@ -13,7 +13,7 @@ export async function sendEmail(formData: FormData) {
   try {
     await resend.emails.send({
       from: "Portfolio <onboarding@resend.dev>",
-      to: "lindazaeske@berlin-international.de",
+      to: "stijnwal01@gmail.com",
       subject: `New Message from ${name}`,
       replyTo: email as string,
       text: message as string,

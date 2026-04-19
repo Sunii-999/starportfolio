@@ -32,8 +32,8 @@ export default function ContactForm() {
             Inquiries
           </h2>
           <div className="space-y-6 text-zinc-500 uppercase tracking-widest text-xs">
-            <p>Available for freelance worldwide</p>
-            <p>Tokyo / London / Remote</p>
+            {/* <p>Available for freelance worldwide</p>
+            <p>Tokyo / London / Remote</p> */}
             <a href="mailto:anastasiazaeske@aol.com" className="block text-white hover:italic transition-all">
               anastasiazaeske@aol.com
             </a>
