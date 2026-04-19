@@ -1,23 +1,43 @@
-export const skills = [
+export interface Skill {
+    id: number;
+    name: string;
+    category: string;
+  }
+  
+  export const skills: Skill[] = [
     {
-        name: "Autocad"
+      id: 1,
+      name: "Autocad",
+      category: "Technical Drafting",
     },
     {
-        name: "Adobe Photoshop"
+      id: 2,
+      name: "Adobe Photoshop",
+      category: "Digital Imaging",
     },
     {
-        name: "Adobe Indesign"
+      id: 3,
+      name: "Adobe Indesign",
+      category: "Layout & Editorial",
     },
     {
-        name: "Adobe Illustrator"
+      id: 4,
+      name: "Adobe Illustrator",
+      category: "Vector Graphics",
     },
-        {
-        name: "Canva"
+    {
+      id: 5,
+      name: "Canva",
+      category: "Quick Production",
     },
-        {
-        name: "Affinity"
+    {
+      id: 6,
+      name: "Affinity",
+      category: "Creative Suite",
     },
-        {
-        name: "Rhinoceros"
-    }
-];
+    {
+      id: 7,
+      name: "Rhinoceros",
+      category: "3D Modeling",
+    },
+  ];

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navigation() {
@@ -10,12 +11,15 @@ export default function Navigation() {
   return (
     <nav className="w-full bg-black text-white font-sans sticky top-0 z-50">
       <div className="flex items-center justify-between h-16 px-6">
+        <Link href="/" className="flex items-center gap-2">
+        
         <p className="font-bold tracking-tight text-xl">Linda Zaeske.</p>
+        </Link>
 
         {/* Desktop menu */}
         <ul className="hidden md:flex gap-8 uppercase text-xs tracking-widest">
           {['About me', 'Projects', 'Contact'].map((item) => (
-            <li key={item}><a href={`#${item.toLowerCase()}`} className="hover:opacity-60 transition-opacity">{item}</a></li>
+            <li key={item}><a href={`/${item.toLowerCase()}`} className="hover:opacity-60 transition-opacity">{item}</a></li>
           ))}
         </ul>
 

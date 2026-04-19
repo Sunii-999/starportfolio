@@ -7,6 +7,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { projects } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
+import Skills from "@/components/Skills/Skills";
+import ContactForm from "@/components/Form/ContactForm";
 
 export default function Home() {
   const horizontalRef = useRef(null);
@@ -45,8 +47,15 @@ export default function Home() {
           <Header />
         </section>
 
-        <section id="projects" className="w-full font-bold text-4xl uppercase px-6 py-16 bg-zinc-950 text-white h-screen flex items-center justify-center">
+        <section id="projects" className="w-full font-bold text-4xl uppercase px-6 py-16 bg-zinc-950 text-white h-screen flex-col items-center justify-center">
+          <h2>
           Featured Projects
+          </h2>
+          <Link href={`/projects`}>
+      <button className="px-8 py-3 border border-white/30 hover:bg-white hover:text-black transition-colors duration-300 uppercase text-sm tracking-widest">
+        View All Project
+      </button>
+      </Link>
         </section>
 
         <div ref={horizontalRef} className="overflow-hidden">
@@ -92,9 +101,9 @@ export default function Home() {
 ))}
           </div>
         </div>
-
+        <Skills />
         <section className="h-screen bg-zinc-100 flex items-center justify-center">
-          <h2 className="text-3xl">FOOTER / CONTACT</h2>
+          <ContactForm />
         </section>
       </main>
     </div>
