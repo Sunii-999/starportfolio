@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Google_Sans, Google_Sans_Code } from "next/font/google";
+import { Google_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation/Navigation";
 
 const googleSans = Google_Sans({
   variable: "--font-google-sans",
-  subsets: ["latin"],
-});
-
-const googleMono = Google_Sans_Code({
-  variable: "--font-google-mono",
   subsets: ["latin"],
 });
 
@@ -26,7 +21,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${googleSans.variable} ${googleMono.variable} h-full antialiased`}
+      className={`${googleSans.variable} h-full antialiased`}
     >
       <body className="min-h-full">
               <Navigation />

@@ -5,11 +5,12 @@ export default function Header() {
   return (
 <div className="relative w-full h-screen">
     <Image
-        src="/images/header.png"
+        src="/images/header.jpg"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover"
         width={1280}
         height={720}
+        loading="eager"
       />
 
       <div className="absolute inset-0 bg-zinc-950/80" />
