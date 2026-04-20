@@ -46,7 +46,6 @@ export const projects = [
     description: "Friedrichstraße 1 is located in a socially mixed area with many families from migration backgrounds and a strong everyday street life. The neighborhood also deals with issues like insecurity and a lack of safe, welcoming public spaces. Because of this, the community center already plays an important role as a place of care, support, and meeting rather than representation. The project responds to this context by focusing on calm, shared experiences instead of control or separation. By introducing guinea pigs as gentle co-inhabitants, the space becomes softer and more approachable, encouraging care, attention, and interaction between different users.",
     time: "Third semester",
     thumbnail: "/images/thumbnails/community-centre.jpg",
-        featured: true,
-
+    featured: true,
   },
 ];
