@@ -47,15 +47,15 @@ const containerRef = useRef<HTMLDivElement>(null);
           <Header />
         </section>
 
-        <section id="projects" className="w-full font-bold text-4xl uppercase px-6 py-16 bg-zinc-950 text-white h-screen flex-col items-center justify-center">
+        <section id="projects" className="w-full font-bold text-4xl uppercase px-6 py-16 bg-zinc-950 text-white flex justify-between">
           <h2>
           Featured Projects
           </h2>
           <Link href={`/projects`}>
-      <button className="px-8 py-3 border border-white/30 hover:bg-white hover:text-black transition-colors duration-300 uppercase text-sm tracking-widest">
-        View All Project
-      </button>
-      </Link>
+              <button className="px-8 py-3 border border-white/30 hover:bg-white hover:text-black transition-colors duration-300 uppercase text-sm tracking-widest">
+                View all projects
+              </button>
+          </Link>
         </section>
 
         <div ref={horizontalRef} className="overflow-hidden">
@@ -102,9 +102,7 @@ const containerRef = useRef<HTMLDivElement>(null);
           </div>
         </div>
         <Skills />
-        <section className="h-screen bg-zinc-100 flex items-center justify-center">
           <ContactForm />
-        </section>
       </main>
     </div>
   );

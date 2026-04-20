@@ -24,11 +24,11 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="bg-zinc-950 py-32 px-6 md:px-16 text-white border-t border-white/5">
+    <section className="g-zinc-950 py-32 md:py-56 px-6 md:px-16 text-white border-t border-white/10 h-screen bg-zinc-900" id="contact">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
         
         <div>
-          <h2 className="text-6xl md:text-8xl font-bold uppercase tracking-tighter mb-12">
+          <h2 className="text-6xl md:text-8xl text-white font-bold uppercase tracking-tighter mb-12">
             Inquiries
           </h2>
           <div className="space-y-6 text-zinc-500 uppercase tracking-widest text-xs">

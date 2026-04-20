@@ -5,6 +5,11 @@ export const profile = {
     birthday: "2003-02-15",
     languages: ["German", "English"],
     location: "Berlin, Germany",
+    emails: {
+        academic: "lindazaeske@berlin-international.de",
+        personal: "anastasiazaeske@aol.com"
+    },
+    linkedin: "https://www.linkedin.com/in/linda-zaeske", // Update with actual URL
     education: [
         {
             institution: "Berlin International University of Applied Sciences",
@@ -21,7 +26,7 @@ export const profile = {
         {
             company: "casualfood gmBh",
             role: "Food Service Employee",
-            duration: "09/2024 - now",
+            duration: "09/2024 - Now",
         },
         {
             company: "Travelex",

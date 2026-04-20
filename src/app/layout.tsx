@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Google_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation/Navigation";
+import Footer from "@/components/Footer/Footer";
 
 const googleSans = Google_Sans({
   variable: "--font-google-sans",
@@ -26,7 +27,9 @@ export default function RootLayout({
       <body className="min-h-full">
               <Navigation />
 
-        {children}</body>
+        {children}
+         <Footer /> 
+        </body>
     </html>
   );
 }
