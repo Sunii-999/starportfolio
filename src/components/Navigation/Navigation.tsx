@@ -32,7 +32,7 @@ export default function Navigation() {
           ))}
           <li>
             <a 
-              href="/resume.pdf" 
+              href="/documents/lindazaeske-portfolio.pdf" 
               download="Linda_Zaeske_Resume.pdf"
               className="bg-white text-black px-4 py-2 rounded-full font-bold hover:bg-zinc-200 transition-colors"
             >
@@ -79,7 +79,7 @@ export default function Navigation() {
 
         <div className="p-6 pb-12 flex flex-col items-center gap-8">
           <a 
-              href="/resume.pdf" 
+              href="/documents/lindazaeske-portfolio.pdf" 
               download="Linda_Zaeske_Portfolio.pdf"
             className="w-full bg-white text-black py-4 text-center rounded-full font-semibold text-lg hover:bg-zinc-200 transition-colors"
           >
