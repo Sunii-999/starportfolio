@@ -12,13 +12,17 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     notFound();
   }
 
-  const { pairs, details } = getProjectImages(slug);
+  const { pairs, details, model, sketch, moodboard, renders } = getProjectImages(slug);
 
   return (
     <ProjectDetailClient 
       project={project} 
       pairs={pairs} 
-      details={details} 
+      details={details}
+      model={model}
+      sketch={sketch}
+      moodboard={moodboard}
+      renders={renders}
     />
   );
 }
